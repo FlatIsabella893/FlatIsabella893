@@ -1,16 +1,19 @@
-## Hi there 👋
+# What's up 🚀
 
-<!--
-**FlatIsabella893/FlatIsabella893** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+I'm **FlatIsabella893**, a maker of things.
 
-Here are some ideas to get you started:
+## About
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+- 🎨 Code is poetry
+- 👯 Looking to collaborate on open source
+- 🤔 Exploring new technologies
+- 🔭 Currently working on personal side projects
+- 🌱 Always learning new things
+
+## Tech
+
+`Scala` `Remix` `Java` `Rust` `Nim` `Spring`
+
+---
+
+_Tea drinker._
