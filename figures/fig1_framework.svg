@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="720" viewBox="0 0 1000 720" font-family="Georgia, 'Times New Roman', serif">
+  <rect width="1000" height="720" fill="#ffffff"/>
+
+  <!-- ============ GRID ============
+       columns: C, B, B+, A  -> x from 200 to 940, 4 cols width 185
+         centres: C=292.5, B=477.5, B+=662.5, A=847.5
+       rows: T2(top), T1, T0(bottom) -> y from 90 to 540, 3 rows height 150
+         centres: T2=165, T1=315, T0=465 -->
+
+  <!-- outer frame -->
+  <rect x="200" y="90" width="740" height="450" fill="none" stroke="#1a1a1a" stroke-width="1.3"/>
+  <!-- vertical separators -->
+  <line x1="385" y1="90" x2="385" y2="540" stroke="#d2d2d2" stroke-width="1"/>
+  <line x1="570" y1="90" x2="570" y2="540" stroke="#d2d2d2" stroke-width="1"/>
+  <line x1="755" y1="90" x2="755" y2="540" stroke="#d2d2d2" stroke-width="1"/>
+  <!-- horizontal separators -->
+  <line x1="200" y1="240" x2="940" y2="240" stroke="#d2d2d2" stroke-width="1"/>
+  <line x1="200" y1="390" x2="940" y2="390" stroke="#d2d2d2" stroke-width="1"/>
+
+  <!-- subtle shading of the 'mature / strong' top-right and 'weak' bottom-left to guide the eye (no gradient, flat low-opacity) -->
+  <rect x="755" y="90"  width="185" height="150" fill="#2f4b6e" fill-opacity="0.05"/>
+  <rect x="200" y="390" width="370" height="150" fill="#000000" fill-opacity="0.035"/>
+
+  <!-- ============ AXIS LABELS ============ -->
+  <!-- X axis -->
+  <text x="570" y="600" font-size="16" font-style="italic" text-anchor="middle" fill="#1a1a1a">Evidence maturity&#8201;&#8212;&#8201;biological causality</text>
+  <text x="292.5" y="567" font-size="14" text-anchor="middle" fill="#333">C</text>
+  <text x="477.5" y="567" font-size="14" text-anchor="middle" fill="#333">B</text>
+  <text x="662.5" y="567" font-size="14" text-anchor="middle" fill="#333">B+</text>
+  <text x="847.5" y="567" font-size="14" text-anchor="middle" fill="#333">A</text>
+  <text x="292.5" y="584" font-size="10" text-anchor="middle" fill="#888">candidate</text>
+  <text x="477.5" y="584" font-size="10" text-anchor="middle" fill="#888">repeat / mechanism</text>
+  <text x="662.5" y="584" font-size="10" text-anchor="middle" fill="#888">high-priority</text>
+  <text x="847.5" y="584" font-size="10" text-anchor="middle" fill="#888">strong functional</text>
+
+  <!-- Y axis -->
+  <text x="58" y="315" font-size="16" font-style="italic" text-anchor="middle" fill="#1a1a1a" transform="rotate(-90 58 315)">Industry applicability&#8201;&#8212;&#8201;breeding utility</text>
+  <text x="180" y="170" font-size="14" text-anchor="end" fill="#333">T2</text>
+  <text x="180" y="320" font-size="14" text-anchor="end" fill="#333">T1</text>
+  <text x="180" y="470" font-size="14" text-anchor="end" fill="#333">T0</text>
+  <text x="180" y="186" font-size="10" text-anchor="end" fill="#888">mature</text>
+  <text x="180" y="336" font-size="10" text-anchor="end" fill="#888">pilot</text>
+  <text x="180" y="486" font-size="10" text-anchor="end" fill="#888">unverified</text>
+
+  <!-- ============ CELL CONTENT ============ -->
+
+  <!-- A / T2 : variant-level A, niche breeding-ready (visible traits) -->
+  <circle cx="772" cy="128" r="4.5" fill="#2f4b6e"/>
+  <text x="784" y="132" font-size="12.5" fill="#1a1a1a">SLCO1B3 (blue shell)</text>
+  <text x="784" y="151" font-size="12.5" fill="#1a1a1a">BCDO2 (yellow skin)</text>
+  <text x="784" y="170" font-size="12.5" fill="#1a1a1a">EDN3 (fibromelanosis)</text>
+  <text x="784" y="189" font-size="12.5" fill="#1a1a1a">SOX5 (pea-comb)</text>
+  <text x="784" y="212" font-size="10" fill="#777">variant-level A; niche T2</text>
+
+  <!-- A / T1 : rose-comb (variant-level A, reproductive risk) ; plumage/morphology B+–A -->
+  <circle cx="772" cy="300" r="4.5" fill="#2f4b6e"/>
+  <text x="784" y="304" font-size="12.5" fill="#1a1a1a">Rose-comb inversion</text>
+  <text x="784" y="322" font-size="10" fill="#777">A, but reproductive-risk</text>
+  <circle cx="772" cy="345" r="4.5" fill="none" stroke="#2f4b6e" stroke-width="1.6"/>
+  <text x="784" y="349" font-size="11.5" fill="#1a1a1a">plumage colour/type (MC1R, KRT75 …)</text>
+
+  <!-- A / T0 : ANP32A, TVB/NHE1 gene/target-level A (asymmetric) -->
+  <rect x="768" y="438" width="9" height="9" fill="#9c6b3f" stroke="#5e3f24" stroke-width="0.8"/>
+  <text x="784" y="446" font-size="12.5" fill="#1a1a1a">ANP32A, TVB/NHE1</text>
+  <text x="784" y="463" font-size="10" fill="#777">gene/target-level A</text>
+
+  <!-- B+ / T1 : MHC-B haplotype -->
+  <polygon points="595,308 589,319 601,319" fill="#6e6e6e" stroke="#444" stroke-width="0.8"/>
+  <text x="608" y="319" font-size="12.5" fill="#1a1a1a">MHC-B haplotype</text>
+  <text x="608" y="336" font-size="10" fill="#777">haplotype-level B+; disease-specific</text>
+
+  <!-- B+ / T0 : IGF2BP1, IGFBP2/5 -->
+  <circle cx="585" cy="446" r="4.5" fill="none" stroke="#2f4b6e" stroke-width="1.6"/>
+  <text x="597" y="450" font-size="12.5" fill="#1a1a1a">IGF2BP1</text>
+  <text x="597" y="468" font-size="12.5" fill="#1a1a1a">IGFBP2/IGFBP5</text>
+  <text x="597" y="486" font-size="10" fill="#777">variant-level B+</text>
+
+  <!-- B / T0 : PHIP -->
+  <circle cx="400" cy="446" r="4.5" fill="none" stroke="#2f4b6e" stroke-width="1.6"/>
+  <text x="412" y="450" font-size="12.5" fill="#1a1a1a">PHIP</text>
+  <text x="412" y="468" font-size="10" fill="#777">variant-level B</text>
+
+  <!-- C–B / T0 : large cluster of polygenic & infection candidates -->
+  <ellipse cx="292.5" cy="500" rx="78" ry="22" fill="#000" fill-opacity="0.05" stroke="#bdbdbd" stroke-width="1" stroke-dasharray="4,3"/>
+  <text x="292.5" y="497" font-size="11" text-anchor="middle" fill="#555">most polygenic &amp;</text>
+  <text x="292.5" y="512" font-size="11" text-anchor="middle" fill="#555">infection candidates</text>
+
+  <!-- asymmetric-evidence connector: ANP32A gene-level A (A/T0) <-> variant-level B–C (B / T0) -->
+  <line x1="766" y1="455" x2="470" y2="455" stroke="#9c6b3f" stroke-width="1.1" stroke-dasharray="4,3"/>
+  <polygon points="470,455 480,451 480,459" fill="#9c6b3f"/>
+  <rect x="455" y="450" width="9" height="9" fill="none" stroke="#9c6b3f" stroke-width="1.2"/>
+  <text x="450" y="438" font-size="10" text-anchor="middle" fill="#9c6b3f">variant-level B–C</text>
+  <text x="618" y="430" font-size="10" text-anchor="middle" fill="#9c6b3f" font-style="italic">asymmetric evidence (same locus)</text>
+
+  <!-- ============ LEGEND ============ -->
+  <g>
+    <rect x="200" y="630" width="740" height="64" fill="none" stroke="#cccccc" stroke-width="1"/>
+    <text x="214" y="650" font-size="11" font-weight="bold" fill="#1a1a1a">Evidence layer</text>
+
+    <circle cx="224" cy="671" r="4.5" fill="#2f4b6e"/>
+    <text x="236" y="675" font-size="11" fill="#1a1a1a">variant-level A (filled)</text>
+    <circle cx="224" cy="688" r="4.5" fill="none" stroke="#2f4b6e" stroke-width="1.6"/>
+    <text x="236" y="692" font-size="11" fill="#1a1a1a">variant-level &lt; A (open)</text>
+
+    <rect x="404" y="667" width="9" height="9" fill="#9c6b3f" stroke="#5e3f24" stroke-width="0.8"/>
+    <text x="420" y="675" font-size="11" fill="#1a1a1a">gene/target-level</text>
+    <polygon points="409,684 403,695 415,695" fill="#6e6e6e" stroke="#444" stroke-width="0.8"/>
+    <text x="420" y="692" font-size="11" fill="#1a1a1a">haplotype/region-level</text>
+
+    <line x1="620" y1="675" x2="660" y2="675" stroke="#9c6b3f" stroke-width="1.1" stroke-dasharray="4,3"/>
+    <text x="668" y="679" font-size="11" fill="#1a1a1a">asymmetric evidence at one locus</text>
+    <text x="620" y="692" font-size="10" fill="#888">shading: top-right = ready; bottom-left = weak</text>
+  </g>
+</svg>
